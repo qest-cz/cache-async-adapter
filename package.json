@@ -1,0 +1,50 @@
+{
+  "name": "@qest/error-utils",
+  "version": "1.0.0",
+  "description": "-",
+  "directories": {
+    "src": "src"
+  },
+  "scripts": {
+    "test": "cross-env TS_NODE_PROJECT=\"tsconfig.test.json\" mocha --opts test/mocha.opts",
+    "test:cover": "nyc --check-coverage mocha --opts test/mocha.opts",
+    "prettier:run": "prettier --write \"src/**/*.ts\"",
+    "prettier:check": "prettier -l \"src/**/*.ts\"",
+    "tslint:run": "tslint --fix -c tslint.json -p .",
+    "tslint": "tslint -c tslint.json -p .",
+    "tsc:check": "tsc --noEmit",
+    "code:fix": "yarn prettier:run && yarn tslint:run",
+    "code:check": "yarn prettier:check && yarn tslint && yarn tsc:check",
+    "build": "rimraf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qest-cz/error-utils.git"
+  },
+  "author": "QEST",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qest-cz/error-utils/issues"
+  },
+  "homepage": "https://github.com/qest-cz/error-utils#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "redis": "^2.8.0",
+    "util": "^0.12.1"
+  }
+}
