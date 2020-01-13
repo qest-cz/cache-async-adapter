@@ -1,5 +1,5 @@
 {
-  "name": "@qest/error-utils",
+  "name": "@qest/cache-async-adapter",
   "version": "1.0.0",
   "description": "-",
   "directories": {
@@ -19,16 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qest-cz/error-utils.git"
+    "url": "git+https://github.com/qest-cz/cache-async-adapter.git"
   },
   "author": "QEST",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qest-cz/error-utils/issues"
+    "url": "https://github.com/qest-cz/cache-async-adapter/issues"
   },
-  "homepage": "https://github.com/qest-cz/error-utils#readme",
+  "homepage": "https://github.com/qest-cz/cache-async-adapter#readme",
   "devDependencies": {
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
@@ -39,7 +39,7 @@
     "ts-node": "^8.4.1",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.11.1",
-    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-prettier": "^1.18.0  ",
     "typescript": "^3.6.4"
   },
   "dependencies": {
