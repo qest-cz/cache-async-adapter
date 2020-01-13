@@ -5,7 +5,7 @@ which can be further expanded
 
 Use memory storage 
 ```typescript
-import {CacheAdapterType, CacheFactory} from "qest-cache";
+import {CacheAdapterType, CacheFactory} from "@qest/cache-async-adapter";
 
 const cacheLocal = new CacheFactory().create(CacheAdapterType.Local);
 
