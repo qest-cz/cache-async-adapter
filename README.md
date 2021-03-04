@@ -15,7 +15,7 @@ console.log(await cacheLocal.get('key1')); // {data: 'hello'}
 
 Use Redis storage
 ```typescript
-import {CacheAdapterType, CacheFactory} from "qest-cache";
+import {CacheAdapterType, CacheFactory} from "@qest/cache-async-adapter";
 const redisConfig = {
     port: 6379,
     host: '127.0.0.1',
