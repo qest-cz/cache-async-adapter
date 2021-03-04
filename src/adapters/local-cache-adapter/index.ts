@@ -14,9 +14,8 @@ export class LocalCacheAdapter implements ICacheAdapter {
     }
 
     public async set(key: string, values: object, msInterval?: number): Promise<void> {
-        const valuesJson = msInterval
-            ? _.assign({ data: values }, { expirationDate: new Date().getTime() + msInterval })
-            : { data: values };
+        const valuesJson =
+            msInterval !== undefined ? _.assign({ data: values }, { expirationDate: new Date().getTime() + msInterval }) : { data: values };
         this.localCache[key] = JSON.stringify(valuesJson);
     }
 
