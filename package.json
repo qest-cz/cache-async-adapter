@@ -1,6 +1,6 @@
 {
   "name": "@qest/cache-async-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Async cache Redis or local with the same interface which can be further expanded",
   "directories": {
     "src": "src"
